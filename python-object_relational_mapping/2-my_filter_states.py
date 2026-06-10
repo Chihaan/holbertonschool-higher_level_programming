@@ -18,7 +18,7 @@ def main():
 
     cur.execute("SELECT * FROM states "
                 "WHERE name = '{}' "
-                "ORDER BY id ASC".format(arg))
+                "ORDER BY states.id ASC".format(arg))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)

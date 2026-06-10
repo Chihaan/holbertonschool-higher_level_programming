@@ -9,7 +9,7 @@ import sys
 def main():
     """Connect to the database and delete states whose name has an 'a'."""
     engine = create_engine(
-        'mysql+mysqldb://{}:{}@localhost/{}'.format(
+        'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
             sys.argv[1], sys.argv[2], sys.argv[3]),
         pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
