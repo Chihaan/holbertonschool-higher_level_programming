@@ -13,7 +13,7 @@ def main():
     arg = sys.argv[4]
 
     conn = MySQLdb.connect(host="localhost", port=3306,
-                           user=usr, passwd=pw, db=db, charset="utf8")
+                           user=usr, passwd=pw, db=db)
     cur = conn.cursor()
 
     cur.execute("SELECT * FROM states "
