@@ -17,7 +17,7 @@ def main():
     cur = conn.cursor()
 
     cur.execute("SELECT * FROM states "
-                "WHERE name = '{}' "
+                "WHERE name LIKE BINARY = '{}' "
                 "ORDER BY states.id ASC".format(arg))
     query_rows = cur.fetchall()
     for row in query_rows:
