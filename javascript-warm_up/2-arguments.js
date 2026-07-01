@@ -1,14 +1,11 @@
 #!/usr/bin/node
 
 const nb = process.argv.length
-const messOne = 'No argument';
-const messTwo = 'Argument found';
-const messThree = 'Arguments found';
 
 if (nb <= 2) {
-  console.log(messOne);
+  console.log('No argument');
 } else if (nb === 3) {
-  console.log(messTwo);
+  console.log('Argument found');
 } else {
-  console.log(messThree);
+  console.log('Arguments found');
 }
