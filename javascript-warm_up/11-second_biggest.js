@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const arg_li = process.argv.slice(2);
-let nb = arg_li.map((x) => parseInt(x));
+const argli = process.argv.slice(2);
+let nb = argli.map((x) => parseInt(x));
 const len = nb.length;
 
 nb = nb.sort((a, b) => a - b);
