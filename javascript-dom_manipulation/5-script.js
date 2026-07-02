@@ -1,6 +1,6 @@
-const trigger = document.getElementById('red_header');
+const trigger = document.getElementById('update_header');
 const head = document.querySelector('header');
 
 trigger.addEventListener('click', function () {
-  head.style.color = '#FF0000';
+  head.textContent = 'New Header!!!';
 });
